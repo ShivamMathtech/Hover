@@ -4,6 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Multiple hover Effect</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      h1 {
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      .common {
+        width: 280px;
+        height: 220px;
+        overflow: hidden;
+        box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
+        position: relative;
+      }
+      .overlay {
+        background-color: rgba(0, 0, 0, 0.392);
+        /* width: 280px;
+        height: 220px; */
+        position: absolute;
+        top: -220px;
+        left: 0px;
+        transition-property: all;
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+      }
+      .box1 {
+        background-image: url("img/1mountam.jpg");
+        background-size: cover;
+      }
+      .overlay > a {
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        display: inline-block;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50px;
+        position: absolute;
+        top: 85px;
+        left: 80px;
+      }
+      .b {
+        left: 140px !important;
+      }
+      .common:hover .overlay {
+        top: 0px;
+      }
+    </style>
   </head>
-  <body></body>
+
+  <body>
+    <h1 class="h1">Developed By Shivam Singh Web Designer</h1>
+    <div class="common box1">
+      <div class="common overlay">
+        <a href="#" class="a"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="#" class="b"><i class="fa-solid fa-link"></i></a>
+      </div>
+    </div>
+  </body>
 </html>
